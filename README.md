@@ -1,3 +1,4 @@
-# my_resume
+# Resume & Templates
 
-- latex code for the resume
+- Latex code for the resume.
+- [More templates here!](https://github.com/subidit/rover-resume#)
