@@ -1,0 +1,206 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\linkicon}{
+  \color{gray}{\footnotesize\raisebox{1pt}{\faIcon{external-link-alt}}}
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Gaurav Sharma} \\ \vspace{4pt}
+      \href{tel:1234567890}{{\color{gray}{\faPhone}} +91 80545 33256} \quad
+  \href{mailto:gauravsharma01042000@gmail.com}{{\color{gray}{\faEnvelope}} gauravsharma01042000@gmail.com} \quad 
+  \href{https://www.linkedin.com/in/gaurav-sharma-6b457a1ab/}{{\color{gray}{\faLinkedin}} gaurav-sharma-6b457a1ab} \quad
+  \href{https://github.com/Gekko12}{{\color{gray}{\faGithub}} Gekko12} \quad
+  
+  % \href{https://github.com/}{{\color{gray}{\faLink}} starportfolio.com} 
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Tata Consultancy Services}{Aug 2022 -- Present}
+      {Data Engineer (Kenvue Inc.  as Client) $|$ \emph{Python, SQL, Treasure Data CDP, Git}}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented \textbf{ETL pipelines} and data orchestration workflows for efficient data extraction and integration.}
+        \resumeItem{Developed and automated end-to-end \textbf{CCPA} compliance workflows, \textbf{reducing manual effort} and enhancing regulatory adherence across digital platforms.}
+        \resumeItem{Implemented automated pipelines to \textbf{migrate and integrate} large-scale consumer datasets from \textbf{Snowflake into CDP} environments, optimizing data quality and enabling real-time marketing activation.}
+        \resumeItem{Integrating \textbf{Treasure Data's Customer Data Platform (CDP)} with The \textbf{Trade Desk DSP} to enable advanced audience targeting across \textbf{digital advertising} channels.}
+      \resumeItemListEnd     
+% -----------Multiple Positions Heading-----------
+    \resumeSubSubheading
+    {Python Developer (Johnson \& Johnson  as Client) $|$ \emph{Python, Django, REST APIs, Git}}{Bengaluru, India}
+    \resumeItemListStart
+       \resumeItem{Developed scalable backend logic to support dynamic UI-based functionality, ensuring seamless user interaction.}
+       \resumeItem{Built \textbf{modular components to integrate APIs, databases, and file storage systems} using Python, enhancing system connectivity and performance.}
+       \resumeItem{Designed and implemented an \textbf{ETL framework} leveraging \textbf{object-oriented programming (OOPs)} and \textbf{software design patterns} to streamline data processing.}
+       \resumeItem{Built and deployed \textbf{RESTful APIs using Django}, enabling smooth communication between frontend and backend services.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {Persistent Systems}{Feb. 2022 -- Jul 2022}
+      {Software Engineer $|$ \emph{Python, Django, REST APIs, Git}}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem{Designed and developed \textbf{RESTful APIs using Django REST Framework} for scalable web applications.}
+        \resumeItem{Implemented \textbf{CRUD operations}, authentication, and middleware to handle secure and efficient data processing.}
+        \resumeItem{Integrated APIs with frontend clients and third-party services to enable smooth data communication.}
+        \resumeItem{Followed best practices for code structure, \textbf{version control} (Git), and \textbf{API documentation} for maintainability.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Eco-Fertilization} \href{https://github.com/Gekko12/Eco-fertilization}{{\color{gray}{\faLink}}} $|$ \emph{Python, Flask, Pandas}}{Nov 2021 -- Jun 2022}
+          \resumeItemListStart
+            \resumeItem{Developed a \textbf{rainfall-aware fertilizer recommendation system} using a \textbf{time-series} based \textbf{Random Forest algorithm} to optimize crop nutrient delivery (N, P, K) and \textbf{minimize runoff risks}.}
+            \resumeItem{ Integrated \textbf{weather forecasting} data with soil fertility analysis to provide dynamic nutrient suggestions, \textbf{enhancing crop yield potential} and environmental sustainability.}
+            \resumeItem{Built a \textbf{responsive web application} using Flask to deliver real-time N:P:K ratio predictions and 7-day weather forecasts, improving decision-making for farmers.}
+            \resumeItem{Utilized Python (Pandas, Scikit-learn, Category Encoders, Matplotlib) for data processing, model development, and visualization; deployed locally via a browser-based interface.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Ajna - The Covid Envision} \href{https://github.com/Gekko12/Ajna-The_Covid_Envision}{{\color{gray}{\faLink}}} $|$ \emph{Python, Tkinter GUI, SQLite}}{Dec 2020 -- Jan 2021}
+          \resumeItemListStart
+            \resumeItem{Developed a \textbf{desktop-based COVID-19 contact tracing and self-assessment application} using Python and Tkinter to track user interactions, travel history, and risk status in a college setting.}
+            \resumeItem{Implemented a local SQLite3 database to securely store user data, meet/travel history, and COVID-19 zone classifications, enabling efficient querying and daily log updates.}
+            \resumeItem{Built an \textbf{interactive GUI} with Tkinter to support \textbf{user registration, login and dynamic status updates} (Green, Yellow, Red) based on contact tracing logic.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
+     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Atria Institute of Technology, Bengaluru}{Aug. 2018 -- Jul 2022}
+      {BE, Computer Science \& Engineering}{GPA: 9.04/10.0}
+    % \resumeSubheading
+    %   {Kendriya Vidyalaya ASC, CBSE}{Bengaluru}
+    %   {Higher Secondary Education in Science}{Apr. 2017 -- May 2018}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
